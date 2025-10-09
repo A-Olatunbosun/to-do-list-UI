@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>To-Do App</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>TO-DO LIST</h1>
+
+      <div class="input-section">
+        <input type="text" class="task-input" placeholder="Add a new task..." />
+        <button class="add-btn">
+          <span class="material-symbols-outlined"> add </span>Add
+        </button>
+      </div>
+
+      <div class="todo-item-container">
+        <div class="todo-item">
+          <input type="checkbox" name="" id="" />
+          <p>Go to the mall</p>
+          <span class="material-symbols-outlined">edit_square </span>
+          <span class="material-symbols-outlined">delete</span>
+        </div>
+
+        <div class="todo-item">
+          <input type="checkbox" name="" id="" />
+          <p>Doctor's Appointment</p>
+          <span class="material-symbols-outlined">edit_square </span>
+          <span class="material-symbols-outlined">delete</span>
+        </div>
+
+        <div class="todo-item">
+          <input type="checkbox" name="" id="" />
+          <p>Do the Laundry</p>
+          <span class="material-symbols-outlined">edit_square </span>
+          <span class="material-symbols-outlined">delete</span>
+        </div>
+
+        <div class="todo-item">
+          <input type="checkbox" name="" id="" />
+          <p>Pick up the mail</p>
+          <span class="material-symbols-outlined">edit_square </span>
+          <span class="material-symbols-outlined">delete</span>
+        </div>
+
+        <div class="todo-item">
+          <input type="checkbox" name="" id="" />
+          <p>Workout for 30mins</p>
+          <span class="material-symbols-outlined">edit_square </span>
+          <span class="material-symbols-outlined">delete</span>
+        </div>
+
+        <div class="todo-item">
+          <input type="checkbox" name="" id="" />
+          <p>Pick up the mail</p>
+          <span class="material-symbols-outlined">edit_square </span>
+          <span class="material-symbols-outlined">delete</span>
+        </div>
+      </div>
+
+      <!-- <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="active">Active</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+      </div> -->
+
+      <ul id="taskList"></ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -0.2px;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem;
+}
+
+section {
+  color: hsl(239, 35%, 24%);
+  color: hsl(212, 47%, 47%);
+  color: hsl(238, 22%, 34%);
+}
+
+.container {
+  background: hsl(240, 31%, 28%);
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  padding: 1.875rem;
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  font-size: clamp(2rem, 2vw + 1rem, 3rem);
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+}
+
+.input-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.task-input {
+  flex: 4;
+  padding: 0.75rem 1rem;
+  background-color: hsl(238, 22%, 34%);
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: hsl(0, 0%, 100%);
+  transition: border-color 0.3s;
+}
+
+.task-input:focus {
+  outline: none;
+  border-color: hsl(229, 78%, 68%);
+}
+
+.add-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.75rem 1rem;
+  background: hsl(229, 76%, 66%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.add-btn:hover {
+  background: hsl(231, 59%, 58%);
+  transform: translateY(-2px);
+}
+
+.add-btn:active {
+  transform: scale(0.98);
+}
+
+.add-btn span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.todo-item-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.todo-item {
+  background-color: hsl(0, 0%, 97%);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.todo-item p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: hsl(239, 35%, 24%);
+}
+
+.todo-item span {
+  font-weight: 500;
+  font-size: 1.2rem;
+
+  cursor: pointer;
+  color: hsla(239, 35%, 24%, 0.8);
+}
+
+.todo-item span:hover {
+  color: hsla(239, 35%, 24%, 9);
+  transform: scale(1.2);
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1.25rem;
+  }
+}
